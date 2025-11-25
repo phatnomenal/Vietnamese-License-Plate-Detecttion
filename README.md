@@ -2,7 +2,7 @@
 
 An advanced **Automatic Number Plate Recognition (ANPR)** system for Vietnamese license plates using YOLOv8. This project combines license plate detection and character recognition (OCR) to extract plate numbers from images and video streams.
 
-## 📋 Overview
+## Overview
 
 This project implements a two-stage detection pipeline:
 1. **License Plate Detection**: Locates and crops license plates in images/video
@@ -12,7 +12,7 @@ The system supports both single-line and two-line Vietnamese license plate forma
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **YOLOv8-based Detection**: State-of-the-art object detection for license plates
 - **Character OCR**: Recognizes 36 classes (0-9, A-Z)
@@ -357,6 +357,7 @@ This project is part of the Vietnamese License Plate Detection initiative.
 
 **Last Updated**: November 2025
 **Version**: 1.0.0
+
 
 
 

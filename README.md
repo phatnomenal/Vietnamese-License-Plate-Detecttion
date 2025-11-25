@@ -14,13 +14,13 @@ The system supports both single-line and two-line Vietnamese license plate forma
 
 ## ✨ Key Features
 
-- ✅ **YOLOv8-based Detection**: State-of-the-art object detection for license plates
-- ✅ **Character OCR**: Recognizes 36 classes (0-9, A-Z)
-- ✅ **Multi-line Support**: Handles both single and two-line license plate formats
-- ✅ **Deskewing**: Automatic rotation correction (4-direction deskewing)
-- ✅ **Real-time Processing**: Camera/video stream support with FPS display
-- ✅ **Static Image Support**: Process individual images
-- ✅ **Confidence Filtering**: Filters low-confidence character predictions
+- **YOLOv8-based Detection**: State-of-the-art object detection for license plates
+- **Character OCR**: Recognizes 36 classes (0-9, A-Z)
+- **Multi-line Support**: Handles both single and two-line license plate formats
+- **Deskewing**: Automatic rotation correction (4-direction deskewing)
+- **Real-time Processing**: Camera/video stream support with FPS display
+- **Static Image Support**: Process individual images
+- **Confidence Filtering**: Filters low-confidence character predictions
 
 ---
 
@@ -84,7 +84,13 @@ LP_Detection/
 
 ---
 
-## 🚀 Installation
+## Installation
+### Data folder
+This repo uses 2 sets of data for 2 stage of license plate recognition problem:
+
+- [License Plate Detection Dataset](https://drive.google.com/file/d/1xchPXf7a1r466ngow_W_9bittRqQEf_T/view?usp=sharing)
+- [Character Detection Dataset](https://drive.google.com/file/d/1bPux9J0e1mz-_Jssx4XX1-wPGamaS8mI/view?usp=sharing)
+Thanks Mì Ai and winter2897 for sharing a part in this dataset.
 
 ### Prerequisites
 - Python 3.8+
@@ -159,7 +165,7 @@ yolo_license_plate = YOLO("path/to/OCR_model.pt")    # Character OCR
 
 ---
 
-## 🔧 Character Mapping
+## Character Mapping
 
 The OCR model recognizes 36 classes:
 
@@ -175,7 +181,7 @@ Vietnamese license plates typically contain:
 
 ---
 
-## 📊 Model Details
+## Model Details
 
 ### License Plate Detection Model
 - **Architecture**: YOLOv8 Nano
@@ -193,7 +199,7 @@ Vietnamese license plates typically contain:
 
 ---
 
-## 🔍 Processing Pipeline
+## Processing Pipeline
 
 ```
 Input Image/Frame
@@ -215,7 +221,7 @@ Input Image/Frame
 
 ---
 
-## 🛠️ Advanced Features
+## Advanced Features
 
 ### Deskewing
 Handles rotated license plates by trying 4 orientations:
@@ -233,7 +239,7 @@ Automatically detects if plate has 1 or 2 lines based on Y-coordinate distributi
 
 ---
 
-## 📈 Training
+## Training
 
 To train the models on your dataset:
 
@@ -254,7 +260,7 @@ To train the models on your dataset:
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Version | Purpose |
 |---------|---------|---------|
@@ -270,7 +276,7 @@ To train the models on your dataset:
 
 ---
 
-## ⚙️ System Requirements
+## System Requirements
 
 - **OS**: Windows, macOS, Linux
 - **Python**: 3.8+
@@ -280,7 +286,7 @@ To train the models on your dataset:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: "ModuleNotFoundError: No module named 'ultralytics'"
 **Solution**: Reinstall requirements
@@ -310,7 +316,7 @@ process_camera(camera_index=0)  # Try 0, 1, 2, etc.
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Vietnamese license plates have specific formatting rules
 - The system handles both old and new plate formats
@@ -319,7 +325,7 @@ process_camera(camera_index=0)  # Try 0, 1, 2, etc.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to:
 - Report bugs
@@ -329,19 +335,19 @@ Contributions are welcome! Please feel free to:
 
 ---
 
-## 📄 License
+## License
 
 This project is part of the Vietnamese License Plate Detection initiative.
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Repository**: [GitHub - Vietnamese-License-Plate-Detecttion](https://github.com/phatnomenal/Vietnamese-License-Plate-Detecttion)
 
 ---
 
-## 🎓 References
+## References
 
 - [YOLOv8 Documentation](https://docs.ultralytics.com/)
 - [PyTorch Official Guide](https://pytorch.org/docs/stable/index.html)
@@ -351,5 +357,6 @@ This project is part of the Vietnamese License Plate Detection initiative.
 
 **Last Updated**: November 2025
 **Version**: 1.0.0
+
 
 
